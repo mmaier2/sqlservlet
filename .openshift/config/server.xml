@@ -14,8 +14,10 @@
                   httpPort="${default.http.port}"
                   httpsPort="${default.https.port}" />
 
-    <application context-root="/" type="war" id="root"
-                 location="ROOT.war" name="root"/>
+
+    <application context-root="/" type="war" id="sqlservlet"
+                 location="sqlservlet.war" name="sql"/>
+
 
     <library id="OracleLib">
         <fileset dir="${env.OPENSHIFT_ORACLE_DIR}/conf" includes="ojdbc6.jar"/>
