@@ -1,3 +1,7 @@
+drop table telefon;
+
+whenever sqlerror exit;
+
 create table telefon (
 Name	varchar2(50),
 Vorname	varchar2(50),
