@@ -20,7 +20,7 @@
 
 
     <library id="OracleLib">
-        <fileset dir="${env.OPENSHIFT_ORACLE_DIR}/conf" includes="ojdbc6.jar"/>
+        <fileset dir="lib" includes="ojdbc6.jar"/>
     </library>
 
     <dataSource id="oracleDS" jndiName="jdbc/ds01" type="javax.sql.DataSource">
